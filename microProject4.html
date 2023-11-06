@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="microProject4.css">
+</head>
+<body>
+    <div class="calculator text">
+        <input type="text" placeholder="0" id="textBox">
+        <div class="box"></div>
+        <div>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button class="del" onclick="deleteOneDigitRight()">DEL</button>
+        </div>
+        <div>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('+')">+</button>
+        </div>
+        <div>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('-')">-</button>
+        </div>
+        <div>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('*')">x</button>
+        </div>
+        <div>
+            <button class="resetbtn" onclick="clearDisplay()">Reset</button>
+            <button class ="equalbtn" onClick="result()">=</button>
+        </div>
+        
+            
+        
+    </div>
+    <script src="microProject4.js"></script>
+</body>
+</html>
